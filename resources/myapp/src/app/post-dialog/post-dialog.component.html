@@ -1,1 +1,41 @@
-<p>post-dialog works!</p>
+<div fxLayout="column" fxLayoutAlign="space-around left" >
+    <div fxLayout="row" fxLayoutAlign="space-between">
+        <mat-form-field fxFlex="50">
+            <mat-label>Seu nome</mat-label>
+                <input matInput>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="40">
+            <mat-label>Seu e-mail</mat-label>
+                <input matInput>
+        </mat-form-field>
+    </div>    
+
+    <div fxLayout="row" fxLayoutAlign="space-between">
+        <mat-form-field fxFlex="50">
+            <mat-label>Título da mensagem</mat-label>
+                <input matInput>
+        </mat-form-field>
+    
+        <mat-form-field fxFlex="40">
+            <mat-label>Subtítulo da mensagem</mat-label>
+                <input matInput>
+        </mat-form-field>    
+    </div>
+    
+    <mat-form-field>
+        <textarea matInput placeholder="Escreva aqui sua mensagem"></textarea>
+    </mat-form-field>  
+
+</div>
+
+
+<input type="file" style="display: none;" #fileinput>
+<button mat-stroked-button color="primary" (click)="fileinput.click()">
+    <mat-icon>add_a_photo</mat-icon> Adicionar foto
+</button>
+
+<div style="text-align: center;">
+        <button mat-button color="primary">Salvar</button>
+        <button mat-button color="warn">Cancelar</button>
+</div>

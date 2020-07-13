@@ -8,7 +8,7 @@ import { Post } from './post';
 })
 export class AppComponent {
   title = 'myapp';
-  private post: Post[] = [
+  public post: Post[] = [
     new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
     new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
     new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),

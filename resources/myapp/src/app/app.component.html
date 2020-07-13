@@ -8,6 +8,8 @@
   </mat-toolbar>
 </p>
 
+<app-post-dialog></app-post-dialog>
+
 <div fxLayout="row wrap" fxLayoutAlign="space-around center" > 
   <app-post *ngFor = "let p of post" [post]="p"></app-post>
 </div>
