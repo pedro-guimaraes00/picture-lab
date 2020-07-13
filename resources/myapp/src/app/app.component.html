@@ -8,7 +8,9 @@
   </mat-toolbar>
 </p>
 
-<app-post *ngFor = "let p of post" [post]="p"></app-post>
+<div fxLayout="row wrap" fxLayoutAlign="space-around center" > 
+  <app-post *ngFor = "let p of post" [post]="p"></app-post>
+</div>
 
 <button class="float-button" mat-fab color="primary" aria-label="icon button delete">
   <mat-icon>add</mat-icon>
