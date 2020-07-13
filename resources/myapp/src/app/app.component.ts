@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Post } from './post';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myapp';
+  private post: Post[] = [
+    new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
+    new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
+    new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
+    new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
+    new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
+    new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
+    new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
+    new Post("João", "Meu Post", "Subtítulo", "joao@gmail.com", "Minha mensagem"),
+  ];
 }
