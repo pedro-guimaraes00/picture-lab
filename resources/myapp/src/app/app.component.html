@@ -3,17 +3,15 @@
     <button mat-icon-button class="example-icon" aria-label="icon-button menu">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>My App</span>
+    <span>PICTURE.lab ©</span>
     <span class="example-spacer"></span>
   </mat-toolbar>
 </p>
-
-<app-post-dialog></app-post-dialog>
 
 <div fxLayout="row wrap" fxLayoutAlign="space-around center" > 
   <app-post *ngFor = "let p of post" [post]="p"></app-post>
 </div>
 
-<button class="float-button" mat-fab color="primary" aria-label="icon button delete">
+<button class="float-button" mat-fab color="primary" (click)="openDialog()">
   <mat-icon>add</mat-icon>
 </button>
