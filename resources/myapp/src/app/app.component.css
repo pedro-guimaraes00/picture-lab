@@ -1,0 +1,9 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.float-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}

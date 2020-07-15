@@ -18,11 +18,15 @@ import {MatBadgeModule} from '@angular/material/badge';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PostComponent } from './post/post.component';
+import { PostDialogComponent } from './post-dialog/post-dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PostComponent,
+    PostDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +50,10 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     
+  ],
+
+  entryComponents: [
+    PostDialogComponent
   ],
 
   bootstrap: [AppComponent]
