@@ -23,8 +23,8 @@ export class PostDialogComponent implements OnInit {
   }
 
   mudouarquivo($event) {
-    this.nomearquivo = event.target.files[0].name;
-    this.dados.arquivo = event.target.files[0];
+    this.nomearquivo = (event.target as HTMLInputElement).files[0].name;
+    this.dados.arquivo = (event.target as HTMLInputElement).files[0];
   }
 
   salvar() {
