@@ -43,11 +43,6 @@ class PostController extends Controller
             return response('Post não encontrado.');
     }
 
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
     public function destroy($id)
     {
         $post = Post::find($id);
