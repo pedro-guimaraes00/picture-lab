@@ -38,4 +38,13 @@ export class PostService {
     })
   }
 
+  like(id: number) {
+    this.http.get('/api/like/' + id).subscribe(
+      (event: any) => {
+        let p = this.post.find((p) => p.id == id);
+        p.likes = event.likes;
+      }
+    );
+  }
+
 }
