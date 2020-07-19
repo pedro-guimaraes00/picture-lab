@@ -20,4 +20,9 @@ export class PostComponent implements OnInit {
     this.postService.like(this.post.id);
   }
 
+  delete() {
+    this.postService.delete(this.post.id);
+  }
+
+
 }

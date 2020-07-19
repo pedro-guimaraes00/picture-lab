@@ -15,7 +15,7 @@
           <mat-icon (click)="like()">thumb_up_alt</mat-icon>
       </button>
       <button mat-button>
-          <mat-icon>share</mat-icon>
+          <mat-icon (click)="delete()">delete</mat-icon>
       </button>
       <button mat-button>
           <mat-icon color="warn" *ngIf="post.likes>0" matBadgeOverlap="false" [matBadge]="post.likes"

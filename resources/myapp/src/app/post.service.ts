@@ -47,4 +47,14 @@ export class PostService {
     );
   }
 
+  delete(id: number) {
+    this.http.delete('/api/' + id).subscribe(
+      (event: any) => {
+        let i = this.post.findIndex((p) => p.id == id);
+        if(i >= 0)
+          this.post.splice(i,1);
+      }
+    );
+  }
+
 }
